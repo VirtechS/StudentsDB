@@ -41,5 +41,42 @@ namespace StudentsDB
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.студентыBindingSource.MoveFirst();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.студентыBindingSource.MovePrevious();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.студентыBindingSource.AddNew();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.студентыBindingSource.MoveLast();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.студентыBindingSource.MoveNext();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.студентыBindingSource.RemoveCurrent();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.студентыBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.zakharovDataSet);
+        }
     }
 }
