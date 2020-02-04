@@ -27,6 +27,8 @@ namespace StudentsDB
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "zakharovDataSet.Специальности". При необходимости она может быть перемещена или удалена.
+            this.специальностиTableAdapter.Fill(this.zakharovDataSet.Специальности);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "zakharovDataSet.Студенты". При необходимости она может быть перемещена или удалена.
             this.студентыTableAdapter.Fill(this.zakharovDataSet.Студенты);
 

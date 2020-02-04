@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label фИОLabel;
-            System.Windows.Forms.Label полLabel;
             System.Windows.Forms.Label датаРожденияLabel;
-            System.Windows.Forms.Label родителиLabel;
             System.Windows.Forms.Label адресLabel;
             System.Windows.Forms.Label телефонLabel;
             System.Windows.Forms.Label паспортныеДанныеLabel;
             System.Windows.Forms.Label номерЗачеткиLabel;
             System.Windows.Forms.Label датаПоступленияLabel;
             System.Windows.Forms.Label группаLabel;
-            System.Windows.Forms.Label курсLabel;
             System.Windows.Forms.Label кодСпециальностиLabel;
             System.Windows.Forms.Label очнаяФормаОбученияLabel;
+            System.Windows.Forms.Label курсLabel1;
+            System.Windows.Forms.Label полLabel1;
+            System.Windows.Forms.Label родителиLabel1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.label1 = new System.Windows.Forms.Label();
             this.zakharovDataSet = new StudentsDB.zakharovDataSet();
@@ -62,17 +62,10 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.студентыBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.фИОTextBox = new System.Windows.Forms.TextBox();
-            this.полTextBox = new System.Windows.Forms.TextBox();
             this.датаРожденияDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.родителиTextBox = new System.Windows.Forms.TextBox();
             this.адресTextBox = new System.Windows.Forms.TextBox();
-            this.телефонTextBox = new System.Windows.Forms.TextBox();
-            this.паспортныеДанныеTextBox = new System.Windows.Forms.TextBox();
-            this.номерЗачеткиTextBox = new System.Windows.Forms.TextBox();
             this.датаПоступленияDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.группаTextBox = new System.Windows.Forms.TextBox();
-            this.курсTextBox = new System.Windows.Forms.TextBox();
-            this.кодСпециальностиTextBox = new System.Windows.Forms.TextBox();
             this.очнаяФормаОбученияCheckBox = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -81,23 +74,34 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.курсNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.полComboBox = new System.Windows.Forms.ComboBox();
+            this.родителиComboBox = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.специальностиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.специальностиTableAdapter = new StudentsDB.zakharovDataSetTableAdapters.СпециальностиTableAdapter();
             фИОLabel = new System.Windows.Forms.Label();
-            полLabel = new System.Windows.Forms.Label();
             датаРожденияLabel = new System.Windows.Forms.Label();
-            родителиLabel = new System.Windows.Forms.Label();
             адресLabel = new System.Windows.Forms.Label();
             телефонLabel = new System.Windows.Forms.Label();
             паспортныеДанныеLabel = new System.Windows.Forms.Label();
             номерЗачеткиLabel = new System.Windows.Forms.Label();
             датаПоступленияLabel = new System.Windows.Forms.Label();
             группаLabel = new System.Windows.Forms.Label();
-            курсLabel = new System.Windows.Forms.Label();
             кодСпециальностиLabel = new System.Windows.Forms.Label();
             очнаяФормаОбученияLabel = new System.Windows.Forms.Label();
+            курсLabel1 = new System.Windows.Forms.Label();
+            полLabel1 = new System.Windows.Forms.Label();
+            родителиLabel1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.zakharovDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.студентыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.студентыBindingNavigator)).BeginInit();
             this.студентыBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.курсNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.специальностиBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // фИОLabel
@@ -109,15 +113,6 @@
             фИОLabel.TabIndex = 3;
             фИОLabel.Text = "ФИО:";
             // 
-            // полLabel
-            // 
-            полLabel.AutoSize = true;
-            полLabel.Location = new System.Drawing.Point(339, 105);
-            полLabel.Name = "полLabel";
-            полLabel.Size = new System.Drawing.Size(30, 13);
-            полLabel.TabIndex = 4;
-            полLabel.Text = "Пол:";
-            // 
             // датаРожденияLabel
             // 
             датаРожденияLabel.AutoSize = true;
@@ -126,15 +121,6 @@
             датаРожденияLabel.Size = new System.Drawing.Size(90, 13);
             датаРожденияLabel.TabIndex = 6;
             датаРожденияLabel.Text = "Дата Рождения:";
-            // 
-            // родителиLabel
-            // 
-            родителиLabel.AutoSize = true;
-            родителиLabel.Location = new System.Drawing.Point(311, 157);
-            родителиLabel.Name = "родителиLabel";
-            родителиLabel.Size = new System.Drawing.Size(58, 13);
-            родителиLabel.TabIndex = 8;
-            родителиLabel.Text = "Родители:";
             // 
             // адресLabel
             // 
@@ -190,15 +176,6 @@
             группаLabel.TabIndex = 20;
             группаLabel.Text = "Группа:";
             // 
-            // курсLabel
-            // 
-            курсLabel.AutoSize = true;
-            курсLabel.Location = new System.Drawing.Point(335, 339);
-            курсLabel.Name = "курсLabel";
-            курсLabel.Size = new System.Drawing.Size(34, 13);
-            курсLabel.TabIndex = 22;
-            курсLabel.Text = "Курс:";
-            // 
             // кодСпециальностиLabel
             // 
             кодСпециальностиLabel.AutoSize = true;
@@ -217,6 +194,33 @@
             очнаяФормаОбученияLabel.TabIndex = 26;
             очнаяФормаОбученияLabel.Text = "Очная Форма Обучения:";
             очнаяФормаОбученияLabel.Click += new System.EventHandler(this.очнаяФормаОбученияLabel_Click);
+            // 
+            // курсLabel1
+            // 
+            курсLabel1.AutoSize = true;
+            курсLabel1.Location = new System.Drawing.Point(335, 338);
+            курсLabel1.Name = "курсLabel1";
+            курсLabel1.Size = new System.Drawing.Size(34, 13);
+            курсLabel1.TabIndex = 37;
+            курсLabel1.Text = "Курс:";
+            // 
+            // полLabel1
+            // 
+            полLabel1.AutoSize = true;
+            полLabel1.Location = new System.Drawing.Point(338, 104);
+            полLabel1.Name = "полLabel1";
+            полLabel1.Size = new System.Drawing.Size(30, 13);
+            полLabel1.TabIndex = 38;
+            полLabel1.Text = "Пол:";
+            // 
+            // родителиLabel1
+            // 
+            родителиLabel1.AutoSize = true;
+            родителиLabel1.Location = new System.Drawing.Point(310, 157);
+            родителиLabel1.Name = "родителиLabel1";
+            родителиLabel1.Size = new System.Drawing.Size(58, 13);
+            родителиLabel1.TabIndex = 39;
+            родителиLabel1.Text = "Родители:";
             // 
             // label1
             // 
@@ -385,14 +389,6 @@
             this.фИОTextBox.Size = new System.Drawing.Size(100, 20);
             this.фИОTextBox.TabIndex = 4;
             // 
-            // полTextBox
-            // 
-            this.полTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "Пол", true));
-            this.полTextBox.Location = new System.Drawing.Point(375, 102);
-            this.полTextBox.Name = "полTextBox";
-            this.полTextBox.Size = new System.Drawing.Size(100, 20);
-            this.полTextBox.TabIndex = 5;
-            // 
             // датаРожденияDateTimePicker
             // 
             this.датаРожденияDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.студентыBindingSource, "ДатаРождения", true));
@@ -401,14 +397,6 @@
             this.датаРожденияDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.датаРожденияDateTimePicker.TabIndex = 7;
             // 
-            // родителиTextBox
-            // 
-            this.родителиTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "Родители", true));
-            this.родителиTextBox.Location = new System.Drawing.Point(375, 154);
-            this.родителиTextBox.Name = "родителиTextBox";
-            this.родителиTextBox.Size = new System.Drawing.Size(100, 20);
-            this.родителиTextBox.TabIndex = 9;
-            // 
             // адресTextBox
             // 
             this.адресTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "Адрес", true));
@@ -416,30 +404,6 @@
             this.адресTextBox.Name = "адресTextBox";
             this.адресTextBox.Size = new System.Drawing.Size(100, 20);
             this.адресTextBox.TabIndex = 11;
-            // 
-            // телефонTextBox
-            // 
-            this.телефонTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "Телефон", true));
-            this.телефонTextBox.Location = new System.Drawing.Point(375, 206);
-            this.телефонTextBox.Name = "телефонTextBox";
-            this.телефонTextBox.Size = new System.Drawing.Size(100, 20);
-            this.телефонTextBox.TabIndex = 13;
-            // 
-            // паспортныеДанныеTextBox
-            // 
-            this.паспортныеДанныеTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "ПаспортныеДанные", true));
-            this.паспортныеДанныеTextBox.Location = new System.Drawing.Point(375, 232);
-            this.паспортныеДанныеTextBox.Name = "паспортныеДанныеTextBox";
-            this.паспортныеДанныеTextBox.Size = new System.Drawing.Size(100, 20);
-            this.паспортныеДанныеTextBox.TabIndex = 15;
-            // 
-            // номерЗачеткиTextBox
-            // 
-            this.номерЗачеткиTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "НомерЗачетки", true));
-            this.номерЗачеткиTextBox.Location = new System.Drawing.Point(375, 258);
-            this.номерЗачеткиTextBox.Name = "номерЗачеткиTextBox";
-            this.номерЗачеткиTextBox.Size = new System.Drawing.Size(100, 20);
-            this.номерЗачеткиTextBox.TabIndex = 17;
             // 
             // датаПоступленияDateTimePicker
             // 
@@ -456,22 +420,6 @@
             this.группаTextBox.Name = "группаTextBox";
             this.группаTextBox.Size = new System.Drawing.Size(100, 20);
             this.группаTextBox.TabIndex = 21;
-            // 
-            // курсTextBox
-            // 
-            this.курсTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "Курс", true));
-            this.курсTextBox.Location = new System.Drawing.Point(375, 336);
-            this.курсTextBox.Name = "курсTextBox";
-            this.курсTextBox.Size = new System.Drawing.Size(100, 20);
-            this.курсTextBox.TabIndex = 23;
-            // 
-            // кодСпециальностиTextBox
-            // 
-            this.кодСпециальностиTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "КодСпециальности", true));
-            this.кодСпециальностиTextBox.Location = new System.Drawing.Point(375, 362);
-            this.кодСпециальностиTextBox.Name = "кодСпециальностиTextBox";
-            this.кодСпециальностиTextBox.Size = new System.Drawing.Size(100, 20);
-            this.кодСпециальностиTextBox.TabIndex = 25;
             // 
             // очнаяФормаОбученияCheckBox
             // 
@@ -553,11 +501,107 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.студентыBindingSource, "НомерЗачетки", true));
+            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "НомерЗачетки", true));
+            this.maskedTextBox1.Location = new System.Drawing.Point(375, 258);
+            this.maskedTextBox1.Mask = "00000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(40, 20);
+            this.maskedTextBox1.TabIndex = 35;
+            this.maskedTextBox1.ValidatingType = typeof(int);
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.студентыBindingSource, "ПаспортныеДанные", true));
+            this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "ПаспортныеДанные", true));
+            this.maskedTextBox2.Location = new System.Drawing.Point(375, 232);
+            this.maskedTextBox2.Mask = "0000-000000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(74, 20);
+            this.maskedTextBox2.TabIndex = 36;
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.студентыBindingSource, "Телефон", true));
+            this.maskedTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "Телефон", true));
+            this.maskedTextBox3.Location = new System.Drawing.Point(375, 209);
+            this.maskedTextBox3.Mask = "+7 (999) 000-0000";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox3.TabIndex = 37;
+            // 
+            // курсNumericUpDown
+            // 
+            this.курсNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.студентыBindingSource, "Курс", true));
+            this.курсNumericUpDown.Location = new System.Drawing.Point(375, 336);
+            this.курсNumericUpDown.Name = "курсNumericUpDown";
+            this.курсNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this.курсNumericUpDown.TabIndex = 38;
+            // 
+            // полComboBox
+            // 
+            this.полComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "Пол", true));
+            this.полComboBox.FormattingEnabled = true;
+            this.полComboBox.Items.AddRange(new object[] {
+            "Мужской",
+            "Женский"});
+            this.полComboBox.Location = new System.Drawing.Point(374, 101);
+            this.полComboBox.Name = "полComboBox";
+            this.полComboBox.Size = new System.Drawing.Size(121, 21);
+            this.полComboBox.TabIndex = 39;
+            // 
+            // родителиComboBox
+            // 
+            this.родителиComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "Родители", true));
+            this.родителиComboBox.FormattingEnabled = true;
+            this.родителиComboBox.Items.AddRange(new object[] {
+            "Мать",
+            "Отец",
+            "Мать Отец",
+            "Нет"});
+            this.родителиComboBox.Location = new System.Drawing.Point(374, 154);
+            this.родителиComboBox.Name = "родителиComboBox";
+            this.родителиComboBox.Size = new System.Drawing.Size(121, 21);
+            this.родителиComboBox.TabIndex = 40;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.студентыBindingSource, "КодСпециальности", true));
+            this.comboBox1.DataSource = this.специальностиBindingSource;
+            this.comboBox1.DisplayMember = "НаиименованиеСпециальности";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(374, 361);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 41;
+            this.comboBox1.ValueMember = "КодСпециальности";
+            // 
+            // специальностиBindingSource
+            // 
+            this.специальностиBindingSource.DataMember = "Специальности";
+            this.специальностиBindingSource.DataSource = this.zakharovDataSet;
+            // 
+            // специальностиTableAdapter
+            // 
+            this.специальностиTableAdapter.ClearBeforeFill = true;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 573);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(родителиLabel1);
+            this.Controls.Add(this.родителиComboBox);
+            this.Controls.Add(полLabel1);
+            this.Controls.Add(this.полComboBox);
+            this.Controls.Add(курсLabel1);
+            this.Controls.Add(this.курсNumericUpDown);
+            this.Controls.Add(this.maskedTextBox3);
+            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -568,27 +612,17 @@
             this.Controls.Add(очнаяФормаОбученияLabel);
             this.Controls.Add(this.очнаяФормаОбученияCheckBox);
             this.Controls.Add(кодСпециальностиLabel);
-            this.Controls.Add(this.кодСпециальностиTextBox);
-            this.Controls.Add(курсLabel);
-            this.Controls.Add(this.курсTextBox);
             this.Controls.Add(группаLabel);
             this.Controls.Add(this.группаTextBox);
             this.Controls.Add(датаПоступленияLabel);
             this.Controls.Add(this.датаПоступленияDateTimePicker);
             this.Controls.Add(номерЗачеткиLabel);
-            this.Controls.Add(this.номерЗачеткиTextBox);
             this.Controls.Add(паспортныеДанныеLabel);
-            this.Controls.Add(this.паспортныеДанныеTextBox);
             this.Controls.Add(телефонLabel);
-            this.Controls.Add(this.телефонTextBox);
             this.Controls.Add(адресLabel);
             this.Controls.Add(this.адресTextBox);
-            this.Controls.Add(родителиLabel);
-            this.Controls.Add(this.родителиTextBox);
             this.Controls.Add(датаРожденияLabel);
             this.Controls.Add(this.датаРожденияDateTimePicker);
-            this.Controls.Add(полLabel);
-            this.Controls.Add(this.полTextBox);
             this.Controls.Add(фИОLabel);
             this.Controls.Add(this.фИОTextBox);
             this.Controls.Add(this.студентыBindingNavigator);
@@ -601,6 +635,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.студентыBindingNavigator)).EndInit();
             this.студентыBindingNavigator.ResumeLayout(false);
             this.студентыBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.курсNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.специальностиBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -627,17 +663,10 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton студентыBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox фИОTextBox;
-        private System.Windows.Forms.TextBox полTextBox;
         private System.Windows.Forms.DateTimePicker датаРожденияDateTimePicker;
-        private System.Windows.Forms.TextBox родителиTextBox;
         private System.Windows.Forms.TextBox адресTextBox;
-        private System.Windows.Forms.TextBox телефонTextBox;
-        private System.Windows.Forms.TextBox паспортныеДанныеTextBox;
-        private System.Windows.Forms.TextBox номерЗачеткиTextBox;
         private System.Windows.Forms.DateTimePicker датаПоступленияDateTimePicker;
         private System.Windows.Forms.TextBox группаTextBox;
-        private System.Windows.Forms.TextBox курсTextBox;
-        private System.Windows.Forms.TextBox кодСпециальностиTextBox;
         private System.Windows.Forms.CheckBox очнаяФормаОбученияCheckBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -646,5 +675,14 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.NumericUpDown курсNumericUpDown;
+        private System.Windows.Forms.ComboBox полComboBox;
+        private System.Windows.Forms.ComboBox родителиComboBox;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.BindingSource специальностиBindingSource;
+        private zakharovDataSetTableAdapters.СпециальностиTableAdapter специальностиTableAdapter;
     }
 }
