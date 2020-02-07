@@ -107,7 +107,7 @@
             // фИОLabel
             // 
             фИОLabel.AutoSize = true;
-            фИОLabel.Location = new System.Drawing.Point(332, 79);
+            фИОLabel.Location = new System.Drawing.Point(125, 79);
             фИОLabel.Name = "фИОLabel";
             фИОLabel.Size = new System.Drawing.Size(37, 13);
             фИОLabel.TabIndex = 3;
@@ -116,7 +116,7 @@
             // датаРожденияLabel
             // 
             датаРожденияLabel.AutoSize = true;
-            датаРожденияLabel.Location = new System.Drawing.Point(279, 132);
+            датаРожденияLabel.Location = new System.Drawing.Point(72, 132);
             датаРожденияLabel.Name = "датаРожденияLabel";
             датаРожденияLabel.Size = new System.Drawing.Size(90, 13);
             датаРожденияLabel.TabIndex = 6;
@@ -125,7 +125,7 @@
             // адресLabel
             // 
             адресLabel.AutoSize = true;
-            адресLabel.Location = new System.Drawing.Point(328, 183);
+            адресLabel.Location = new System.Drawing.Point(121, 183);
             адресLabel.Name = "адресLabel";
             адресLabel.Size = new System.Drawing.Size(41, 13);
             адресLabel.TabIndex = 10;
@@ -134,7 +134,7 @@
             // телефонLabel
             // 
             телефонLabel.AutoSize = true;
-            телефонLabel.Location = new System.Drawing.Point(314, 209);
+            телефонLabel.Location = new System.Drawing.Point(107, 209);
             телефонLabel.Name = "телефонLabel";
             телефонLabel.Size = new System.Drawing.Size(55, 13);
             телефонLabel.TabIndex = 12;
@@ -143,7 +143,7 @@
             // паспортныеДанныеLabel
             // 
             паспортныеДанныеLabel.AutoSize = true;
-            паспортныеДанныеLabel.Location = new System.Drawing.Point(252, 235);
+            паспортныеДанныеLabel.Location = new System.Drawing.Point(45, 235);
             паспортныеДанныеLabel.Name = "паспортныеДанныеLabel";
             паспортныеДанныеLabel.Size = new System.Drawing.Size(117, 13);
             паспортныеДанныеLabel.TabIndex = 14;
@@ -152,7 +152,7 @@
             // номерЗачеткиLabel
             // 
             номерЗачеткиLabel.AutoSize = true;
-            номерЗачеткиLabel.Location = new System.Drawing.Point(281, 261);
+            номерЗачеткиLabel.Location = new System.Drawing.Point(74, 261);
             номерЗачеткиLabel.Name = "номерЗачеткиLabel";
             номерЗачеткиLabel.Size = new System.Drawing.Size(88, 13);
             номерЗачеткиLabel.TabIndex = 16;
@@ -161,7 +161,7 @@
             // датаПоступленияLabel
             // 
             датаПоступленияLabel.AutoSize = true;
-            датаПоступленияLabel.Location = new System.Drawing.Point(264, 288);
+            датаПоступленияLabel.Location = new System.Drawing.Point(57, 288);
             датаПоступленияLabel.Name = "датаПоступленияLabel";
             датаПоступленияLabel.Size = new System.Drawing.Size(105, 13);
             датаПоступленияLabel.TabIndex = 18;
@@ -170,7 +170,7 @@
             // группаLabel
             // 
             группаLabel.AutoSize = true;
-            группаLabel.Location = new System.Drawing.Point(324, 313);
+            группаLabel.Location = new System.Drawing.Point(117, 313);
             группаLabel.Name = "группаLabel";
             группаLabel.Size = new System.Drawing.Size(45, 13);
             группаLabel.TabIndex = 20;
@@ -179,7 +179,7 @@
             // кодСпециальностиLabel
             // 
             кодСпециальностиLabel.AutoSize = true;
-            кодСпециальностиLabel.Location = new System.Drawing.Point(259, 365);
+            кодСпециальностиLabel.Location = new System.Drawing.Point(52, 365);
             кодСпециальностиLabel.Name = "кодСпециальностиLabel";
             кодСпециальностиLabel.Size = new System.Drawing.Size(110, 13);
             кодСпециальностиLabel.TabIndex = 24;
@@ -188,7 +188,7 @@
             // очнаяФормаОбученияLabel
             // 
             очнаяФормаОбученияLabel.AutoSize = true;
-            очнаяФормаОбученияLabel.Location = new System.Drawing.Point(237, 393);
+            очнаяФормаОбученияLabel.Location = new System.Drawing.Point(30, 393);
             очнаяФормаОбученияLabel.Name = "очнаяФормаОбученияLabel";
             очнаяФормаОбученияLabel.Size = new System.Drawing.Size(132, 13);
             очнаяФормаОбученияLabel.TabIndex = 26;
@@ -198,7 +198,7 @@
             // курсLabel1
             // 
             курсLabel1.AutoSize = true;
-            курсLabel1.Location = new System.Drawing.Point(335, 338);
+            курсLabel1.Location = new System.Drawing.Point(128, 338);
             курсLabel1.Name = "курсLabel1";
             курсLabel1.Size = new System.Drawing.Size(34, 13);
             курсLabel1.TabIndex = 37;
@@ -207,7 +207,7 @@
             // полLabel1
             // 
             полLabel1.AutoSize = true;
-            полLabel1.Location = new System.Drawing.Point(338, 104);
+            полLabel1.Location = new System.Drawing.Point(131, 104);
             полLabel1.Name = "полLabel1";
             полLabel1.Size = new System.Drawing.Size(30, 13);
             полLabel1.TabIndex = 38;
@@ -216,7 +216,7 @@
             // родителиLabel1
             // 
             родителиLabel1.AutoSize = true;
-            родителиLabel1.Location = new System.Drawing.Point(310, 157);
+            родителиLabel1.Location = new System.Drawing.Point(103, 157);
             родителиLabel1.Name = "родителиLabel1";
             родителиLabel1.Size = new System.Drawing.Size(58, 13);
             родителиLabel1.TabIndex = 39;
@@ -226,7 +226,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(235, 38);
+            this.label1.Location = new System.Drawing.Point(28, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(331, 35);
             this.label1.TabIndex = 2;
@@ -282,7 +282,7 @@
             this.студентыBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.студентыBindingNavigator.Name = "студентыBindingNavigator";
             this.студентыBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.студентыBindingNavigator.Size = new System.Drawing.Size(800, 25);
+            this.студентыBindingNavigator.Size = new System.Drawing.Size(396, 25);
             this.студентыBindingNavigator.TabIndex = 3;
             this.студентыBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -384,7 +384,7 @@
             // фИОTextBox
             // 
             this.фИОTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "ФИО", true));
-            this.фИОTextBox.Location = new System.Drawing.Point(375, 76);
+            this.фИОTextBox.Location = new System.Drawing.Point(168, 76);
             this.фИОTextBox.Name = "фИОTextBox";
             this.фИОTextBox.Size = new System.Drawing.Size(100, 20);
             this.фИОTextBox.TabIndex = 4;
@@ -392,7 +392,7 @@
             // датаРожденияDateTimePicker
             // 
             this.датаРожденияDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.студентыBindingSource, "ДатаРождения", true));
-            this.датаРожденияDateTimePicker.Location = new System.Drawing.Point(375, 128);
+            this.датаРожденияDateTimePicker.Location = new System.Drawing.Point(168, 128);
             this.датаРожденияDateTimePicker.Name = "датаРожденияDateTimePicker";
             this.датаРожденияDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.датаРожденияDateTimePicker.TabIndex = 7;
@@ -400,7 +400,7 @@
             // адресTextBox
             // 
             this.адресTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "Адрес", true));
-            this.адресTextBox.Location = new System.Drawing.Point(375, 180);
+            this.адресTextBox.Location = new System.Drawing.Point(168, 180);
             this.адресTextBox.Name = "адресTextBox";
             this.адресTextBox.Size = new System.Drawing.Size(100, 20);
             this.адресTextBox.TabIndex = 11;
@@ -408,7 +408,7 @@
             // датаПоступленияDateTimePicker
             // 
             this.датаПоступленияDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.студентыBindingSource, "ДатаПоступления", true));
-            this.датаПоступленияDateTimePicker.Location = new System.Drawing.Point(375, 284);
+            this.датаПоступленияDateTimePicker.Location = new System.Drawing.Point(168, 284);
             this.датаПоступленияDateTimePicker.Name = "датаПоступленияDateTimePicker";
             this.датаПоступленияDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.датаПоступленияDateTimePicker.TabIndex = 19;
@@ -416,7 +416,7 @@
             // группаTextBox
             // 
             this.группаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "Группа", true));
-            this.группаTextBox.Location = new System.Drawing.Point(375, 310);
+            this.группаTextBox.Location = new System.Drawing.Point(168, 310);
             this.группаTextBox.Name = "группаTextBox";
             this.группаTextBox.Size = new System.Drawing.Size(100, 20);
             this.группаTextBox.TabIndex = 21;
@@ -424,7 +424,7 @@
             // очнаяФормаОбученияCheckBox
             // 
             this.очнаяФормаОбученияCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.студентыBindingSource, "ОчнаяФормаОбучения", true));
-            this.очнаяФормаОбученияCheckBox.Location = new System.Drawing.Point(375, 388);
+            this.очнаяФормаОбученияCheckBox.Location = new System.Drawing.Point(168, 388);
             this.очнаяФормаОбученияCheckBox.Name = "очнаяФормаОбученияCheckBox";
             this.очнаяФормаОбученияCheckBox.Size = new System.Drawing.Size(104, 24);
             this.очнаяФормаОбученияCheckBox.TabIndex = 27;
@@ -433,7 +433,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(296, 435);
+            this.button1.Location = new System.Drawing.Point(89, 435);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 28;
@@ -443,7 +443,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(389, 435);
+            this.button2.Location = new System.Drawing.Point(182, 435);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(86, 23);
             this.button2.TabIndex = 29;
@@ -453,7 +453,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(491, 435);
+            this.button3.Location = new System.Drawing.Point(284, 435);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 30;
@@ -463,7 +463,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(296, 480);
+            this.button4.Location = new System.Drawing.Point(89, 480);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 31;
@@ -473,7 +473,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(389, 480);
+            this.button5.Location = new System.Drawing.Point(182, 480);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(86, 23);
             this.button5.TabIndex = 32;
@@ -483,7 +483,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(491, 480);
+            this.button6.Location = new System.Drawing.Point(284, 480);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 33;
@@ -493,7 +493,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(389, 525);
+            this.button7.Location = new System.Drawing.Point(182, 525);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(86, 23);
             this.button7.TabIndex = 34;
@@ -505,7 +505,7 @@
             // 
             this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.студентыBindingSource, "НомерЗачетки", true));
             this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "НомерЗачетки", true));
-            this.maskedTextBox1.Location = new System.Drawing.Point(375, 258);
+            this.maskedTextBox1.Location = new System.Drawing.Point(168, 258);
             this.maskedTextBox1.Mask = "00000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(40, 20);
@@ -516,7 +516,7 @@
             // 
             this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.студентыBindingSource, "ПаспортныеДанные", true));
             this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "ПаспортныеДанные", true));
-            this.maskedTextBox2.Location = new System.Drawing.Point(375, 232);
+            this.maskedTextBox2.Location = new System.Drawing.Point(168, 232);
             this.maskedTextBox2.Mask = "0000-000000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(74, 20);
@@ -526,7 +526,7 @@
             // 
             this.maskedTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.студентыBindingSource, "Телефон", true));
             this.maskedTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.студентыBindingSource, "Телефон", true));
-            this.maskedTextBox3.Location = new System.Drawing.Point(375, 209);
+            this.maskedTextBox3.Location = new System.Drawing.Point(168, 209);
             this.maskedTextBox3.Mask = "+7 (999) 000-0000";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
@@ -535,7 +535,7 @@
             // курсNumericUpDown
             // 
             this.курсNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.студентыBindingSource, "Курс", true));
-            this.курсNumericUpDown.Location = new System.Drawing.Point(375, 336);
+            this.курсNumericUpDown.Location = new System.Drawing.Point(168, 336);
             this.курсNumericUpDown.Name = "курсNumericUpDown";
             this.курсNumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.курсNumericUpDown.TabIndex = 38;
@@ -547,7 +547,7 @@
             this.полComboBox.Items.AddRange(new object[] {
             "Мужской",
             "Женский"});
-            this.полComboBox.Location = new System.Drawing.Point(374, 101);
+            this.полComboBox.Location = new System.Drawing.Point(167, 101);
             this.полComboBox.Name = "полComboBox";
             this.полComboBox.Size = new System.Drawing.Size(121, 21);
             this.полComboBox.TabIndex = 39;
@@ -561,7 +561,7 @@
             "Отец",
             "Мать Отец",
             "Нет"});
-            this.родителиComboBox.Location = new System.Drawing.Point(374, 154);
+            this.родителиComboBox.Location = new System.Drawing.Point(167, 154);
             this.родителиComboBox.Name = "родителиComboBox";
             this.родителиComboBox.Size = new System.Drawing.Size(121, 21);
             this.родителиComboBox.TabIndex = 40;
@@ -572,7 +572,7 @@
             this.comboBox1.DataSource = this.специальностиBindingSource;
             this.comboBox1.DisplayMember = "НаиименованиеСпециальности";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(374, 361);
+            this.comboBox1.Location = new System.Drawing.Point(167, 361);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 41;
@@ -591,7 +591,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 573);
+            this.ClientSize = new System.Drawing.Size(396, 573);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(родителиLabel1);
             this.Controls.Add(this.родителиComboBox);

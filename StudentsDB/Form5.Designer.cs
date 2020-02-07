@@ -39,8 +39,8 @@
             System.Windows.Forms.Label датаЭкзамена3Label;
             System.Windows.Forms.Label кодПредмета3Label;
             System.Windows.Forms.Label оценка3Label;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             System.Windows.Forms.Label среднийБаллLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
             this.zakharovDataSet = new StudentsDB.zakharovDataSet();
             this.оценкиBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -91,7 +91,7 @@
             // кодСтудентаLabel
             // 
             кодСтудентаLabel.AutoSize = true;
-            кодСтудентаLabel.Location = new System.Drawing.Point(482, 126);
+            кодСтудентаLabel.Location = new System.Drawing.Point(93, 107);
             кодСтудентаLabel.Name = "кодСтудентаLabel";
             кодСтудентаLabel.Size = new System.Drawing.Size(78, 13);
             кодСтудентаLabel.TabIndex = 4;
@@ -100,7 +100,7 @@
             // датаЭкзамена1Label
             // 
             датаЭкзамена1Label.AutoSize = true;
-            датаЭкзамена1Label.Location = new System.Drawing.Point(71, 187);
+            датаЭкзамена1Label.Location = new System.Drawing.Point(38, 137);
             датаЭкзамена1Label.Name = "датаЭкзамена1Label";
             датаЭкзамена1Label.Size = new System.Drawing.Size(133, 13);
             датаЭкзамена1Label.TabIndex = 5;
@@ -109,7 +109,7 @@
             // кодПредмета1Label
             // 
             кодПредмета1Label.AutoSize = true;
-            кодПредмета1Label.Location = new System.Drawing.Point(79, 213);
+            кодПредмета1Label.Location = new System.Drawing.Point(46, 163);
             кодПредмета1Label.Name = "кодПредмета1Label";
             кодПредмета1Label.Size = new System.Drawing.Size(125, 13);
             кодПредмета1Label.TabIndex = 6;
@@ -118,7 +118,7 @@
             // оценка1Label
             // 
             оценка1Label.AutoSize = true;
-            оценка1Label.Location = new System.Drawing.Point(38, 240);
+            оценка1Label.Location = new System.Drawing.Point(5, 190);
             оценка1Label.Name = "оценка1Label";
             оценка1Label.Size = new System.Drawing.Size(166, 13);
             оценка1Label.TabIndex = 8;
@@ -127,7 +127,7 @@
             // датаЭкзамена2Label
             // 
             датаЭкзамена2Label.AutoSize = true;
-            датаЭкзамена2Label.Location = new System.Drawing.Point(388, 189);
+            датаЭкзамена2Label.Location = new System.Drawing.Point(38, 214);
             датаЭкзамена2Label.Name = "датаЭкзамена2Label";
             датаЭкзамена2Label.Size = new System.Drawing.Size(132, 13);
             датаЭкзамена2Label.TabIndex = 10;
@@ -136,7 +136,7 @@
             // кодПредмета2Label
             // 
             кодПредмета2Label.AutoSize = true;
-            кодПредмета2Label.Location = new System.Drawing.Point(396, 214);
+            кодПредмета2Label.Location = new System.Drawing.Point(46, 239);
             кодПредмета2Label.Name = "кодПредмета2Label";
             кодПредмета2Label.Size = new System.Drawing.Size(124, 13);
             кодПредмета2Label.TabIndex = 12;
@@ -145,7 +145,7 @@
             // оценка2Label
             // 
             оценка2Label.AutoSize = true;
-            оценка2Label.Location = new System.Drawing.Point(357, 240);
+            оценка2Label.Location = new System.Drawing.Point(7, 265);
             оценка2Label.Name = "оценка2Label";
             оценка2Label.Size = new System.Drawing.Size(165, 13);
             оценка2Label.TabIndex = 14;
@@ -154,7 +154,7 @@
             // датаЭкзамена3Label
             // 
             датаЭкзамена3Label.AutoSize = true;
-            датаЭкзамена3Label.Location = new System.Drawing.Point(704, 189);
+            датаЭкзамена3Label.Location = new System.Drawing.Point(34, 292);
             датаЭкзамена3Label.Name = "датаЭкзамена3Label";
             датаЭкзамена3Label.Size = new System.Drawing.Size(137, 13);
             датаЭкзамена3Label.TabIndex = 16;
@@ -163,7 +163,7 @@
             // кодПредмета3Label
             // 
             кодПредмета3Label.AutoSize = true;
-            кодПредмета3Label.Location = new System.Drawing.Point(712, 214);
+            кодПредмета3Label.Location = new System.Drawing.Point(42, 317);
             кодПредмета3Label.Name = "кодПредмета3Label";
             кодПредмета3Label.Size = new System.Drawing.Size(129, 13);
             кодПредмета3Label.TabIndex = 18;
@@ -172,17 +172,26 @@
             // оценка3Label
             // 
             оценка3Label.AutoSize = true;
-            оценка3Label.Location = new System.Drawing.Point(671, 240);
+            оценка3Label.Location = new System.Drawing.Point(1, 343);
             оценка3Label.Name = "оценка3Label";
             оценка3Label.Size = new System.Drawing.Size(170, 13);
             оценка3Label.TabIndex = 20;
             оценка3Label.Text = "Оценка по третьему экзаменту:";
             // 
+            // среднийБаллLabel
+            // 
+            среднийБаллLabel.AutoSize = true;
+            среднийБаллLabel.Location = new System.Drawing.Point(92, 370);
+            среднийБаллLabel.Name = "среднийБаллLabel";
+            среднийБаллLabel.Size = new System.Drawing.Size(78, 13);
+            среднийБаллLabel.TabIndex = 22;
+            среднийБаллLabel.Text = "Средний Балл";
+            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(412, 76);
+            this.label1.Location = new System.Drawing.Point(37, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(211, 35);
             this.label1.TabIndex = 3;
@@ -238,7 +247,7 @@
             this.оценкиBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.оценкиBindingNavigator.Name = "оценкиBindingNavigator";
             this.оценкиBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.оценкиBindingNavigator.Size = new System.Drawing.Size(1042, 25);
+            this.оценкиBindingNavigator.Size = new System.Drawing.Size(444, 25);
             this.оценкиBindingNavigator.TabIndex = 4;
             this.оценкиBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -340,7 +349,7 @@
             // кодСтудентаTextBox
             // 
             this.кодСтудентаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.оценкиBindingSource, "КодСтудента", true));
-            this.кодСтудентаTextBox.Location = new System.Drawing.Point(464, 142);
+            this.кодСтудентаTextBox.Location = new System.Drawing.Point(177, 104);
             this.кодСтудентаTextBox.Name = "кодСтудентаTextBox";
             this.кодСтудентаTextBox.Size = new System.Drawing.Size(125, 20);
             this.кодСтудентаTextBox.TabIndex = 5;
@@ -348,7 +357,7 @@
             // датаЭкзамена1DateTimePicker
             // 
             this.датаЭкзамена1DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.оценкиBindingSource, "ДатаЭкзамена1", true));
-            this.датаЭкзамена1DateTimePicker.Location = new System.Drawing.Point(210, 185);
+            this.датаЭкзамена1DateTimePicker.Location = new System.Drawing.Point(177, 135);
             this.датаЭкзамена1DateTimePicker.Name = "датаЭкзамена1DateTimePicker";
             this.датаЭкзамена1DateTimePicker.Size = new System.Drawing.Size(123, 20);
             this.датаЭкзамена1DateTimePicker.TabIndex = 6;
@@ -356,7 +365,7 @@
             // кодПредмета1TextBox
             // 
             this.кодПредмета1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.оценкиBindingSource, "КодПредмета1", true));
-            this.кодПредмета1TextBox.Location = new System.Drawing.Point(210, 210);
+            this.кодПредмета1TextBox.Location = new System.Drawing.Point(177, 160);
             this.кодПредмета1TextBox.Name = "кодПредмета1TextBox";
             this.кодПредмета1TextBox.Size = new System.Drawing.Size(123, 20);
             this.кодПредмета1TextBox.TabIndex = 7;
@@ -364,7 +373,7 @@
             // оценка1TextBox
             // 
             this.оценка1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.оценкиBindingSource, "Оценка1", true));
-            this.оценка1TextBox.Location = new System.Drawing.Point(210, 236);
+            this.оценка1TextBox.Location = new System.Drawing.Point(177, 186);
             this.оценка1TextBox.Name = "оценка1TextBox";
             this.оценка1TextBox.Size = new System.Drawing.Size(123, 20);
             this.оценка1TextBox.TabIndex = 9;
@@ -372,7 +381,7 @@
             // датаЭкзамена2DateTimePicker
             // 
             this.датаЭкзамена2DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.оценкиBindingSource, "ДатаЭкзамена2", true));
-            this.датаЭкзамена2DateTimePicker.Location = new System.Drawing.Point(528, 185);
+            this.датаЭкзамена2DateTimePicker.Location = new System.Drawing.Point(178, 210);
             this.датаЭкзамена2DateTimePicker.Name = "датаЭкзамена2DateTimePicker";
             this.датаЭкзамена2DateTimePicker.Size = new System.Drawing.Size(123, 20);
             this.датаЭкзамена2DateTimePicker.TabIndex = 11;
@@ -380,7 +389,7 @@
             // кодПредмета2TextBox
             // 
             this.кодПредмета2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.оценкиBindingSource, "КодПредмета2", true));
-            this.кодПредмета2TextBox.Location = new System.Drawing.Point(528, 210);
+            this.кодПредмета2TextBox.Location = new System.Drawing.Point(178, 235);
             this.кодПредмета2TextBox.Name = "кодПредмета2TextBox";
             this.кодПредмета2TextBox.Size = new System.Drawing.Size(123, 20);
             this.кодПредмета2TextBox.TabIndex = 13;
@@ -388,7 +397,7 @@
             // оценка2TextBox
             // 
             this.оценка2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.оценкиBindingSource, "Оценка2", true));
-            this.оценка2TextBox.Location = new System.Drawing.Point(528, 236);
+            this.оценка2TextBox.Location = new System.Drawing.Point(178, 261);
             this.оценка2TextBox.Name = "оценка2TextBox";
             this.оценка2TextBox.Size = new System.Drawing.Size(123, 20);
             this.оценка2TextBox.TabIndex = 15;
@@ -396,7 +405,7 @@
             // датаЭкзамена3DateTimePicker
             // 
             this.датаЭкзамена3DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.оценкиBindingSource, "ДатаЭкзамена3", true));
-            this.датаЭкзамена3DateTimePicker.Location = new System.Drawing.Point(847, 186);
+            this.датаЭкзамена3DateTimePicker.Location = new System.Drawing.Point(177, 289);
             this.датаЭкзамена3DateTimePicker.Name = "датаЭкзамена3DateTimePicker";
             this.датаЭкзамена3DateTimePicker.Size = new System.Drawing.Size(123, 20);
             this.датаЭкзамена3DateTimePicker.TabIndex = 17;
@@ -404,7 +413,7 @@
             // кодПредмета3TextBox
             // 
             this.кодПредмета3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.оценкиBindingSource, "КодПредмета3", true));
-            this.кодПредмета3TextBox.Location = new System.Drawing.Point(847, 211);
+            this.кодПредмета3TextBox.Location = new System.Drawing.Point(177, 314);
             this.кодПредмета3TextBox.Name = "кодПредмета3TextBox";
             this.кодПредмета3TextBox.Size = new System.Drawing.Size(123, 20);
             this.кодПредмета3TextBox.TabIndex = 19;
@@ -412,31 +421,22 @@
             // оценка3TextBox
             // 
             this.оценка3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.оценкиBindingSource, "Оценка3", true));
-            this.оценка3TextBox.Location = new System.Drawing.Point(847, 238);
+            this.оценка3TextBox.Location = new System.Drawing.Point(177, 341);
             this.оценка3TextBox.Name = "оценка3TextBox";
             this.оценка3TextBox.Size = new System.Drawing.Size(123, 20);
             this.оценка3TextBox.TabIndex = 21;
             // 
-            // среднийБаллLabel
-            // 
-            среднийБаллLabel.AutoSize = true;
-            среднийБаллLabel.Location = new System.Drawing.Point(482, 281);
-            среднийБаллLabel.Name = "среднийБаллLabel";
-            среднийБаллLabel.Size = new System.Drawing.Size(78, 13);
-            среднийБаллLabel.TabIndex = 22;
-            среднийБаллLabel.Text = "Средний Балл";
-            // 
             // среднийБаллTextBox
             // 
             this.среднийБаллTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.оценкиBindingSource, "СреднийБалл", true));
-            this.среднийБаллTextBox.Location = new System.Drawing.Point(474, 297);
+            this.среднийБаллTextBox.Location = new System.Drawing.Point(177, 367);
             this.среднийБаллTextBox.Name = "среднийБаллTextBox";
-            this.среднийБаллTextBox.Size = new System.Drawing.Size(100, 20);
+            this.среднийБаллTextBox.Size = new System.Drawing.Size(125, 20);
             this.среднийБаллTextBox.TabIndex = 23;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(474, 323);
+            this.button1.Location = new System.Drawing.Point(309, 367);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 24;
@@ -448,7 +448,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 450);
+            this.ClientSize = new System.Drawing.Size(444, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(среднийБаллLabel);
             this.Controls.Add(this.среднийБаллTextBox);
